@@ -25,6 +25,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 
   <title>Staff Profile</title>
 
@@ -71,10 +74,11 @@
           </ul>
         </div>
       </nav>
+      <p class="welcome">Hello, <?php echo $user['username'] ?>!</p>
 
       <div class="container">
         <form id="profileForm">
-            <h2>User <?php echo $user['username'],$_SESSION['id']; ?> Profile</h2>
+            <h2>Your Profile</h2>
 
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" value="<?php echo $user['username']; ?>" required>

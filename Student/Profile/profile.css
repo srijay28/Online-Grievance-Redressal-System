@@ -8,13 +8,20 @@ body {
   /* border: 10px solid black;  */
   width: 650px;
   position: absolute;
-  left: 25rem;
-  top: 8rem;
+  left: 20rem;
+  top: 12rem;
   display: flex; /* not useful */
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.welcome {
+  position: absolute;
+  left: 21rem;
+  top: 6rem;
+  font-size: 3rem;
+  font-family: Roboto;
 }
 
 form {
