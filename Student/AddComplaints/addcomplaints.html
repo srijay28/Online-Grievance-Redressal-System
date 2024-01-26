@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Add Complaints</title>
+   
+  <!-- Bootstrap core CSS -->
+  <link href= "../../css/bootstrap.min.css" rel="stylesheet">
+  <link href= "addcomplaints.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"><b>GRSystem</b></div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-dark custom-text-white">Dashboard</a>
+        <a href="../Profile/Profile.php" class="list-group-item list-group-item-action bg-dark custom-text-white">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark active">Add Complaints</a>
+        <a href="../ViewComplaints/ViewComplaints.html" class="list-group-item list-group-item-action bg-dark custom-text-white">View Complaints</a>
+        <a href="../ResolvedGrievances/ResolvedGrievances.html" class="list-group-item list-group-item-action bg-dark custom-text-white">Resolved Greivances</a>
+        <a href="../PasswordReset/PasswordReset.html" class="list-group-item list-group-item-action bg-dark custom-text-white">Password Reset</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Dashboard</button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Profile/Profile.php">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../Logout.php">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h2>Add Complaints</h2>
+        <form id="grievanceForm">
+            <label for="category">Grievance Type:</label>
+            <select id="category" name="type" required>
+                <option value="" disabled selected>Select Type</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="Dispute">Dispute</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+            <label for="title">Title:</label>
+            <input id="title" name="title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            <p id="charCount">Characters remaining: 1000</p>
+
+            <button type="button" onclick="submitGreivance()">Submit Grievance</button>
+        </form>
+        <div id="response"></div>
+    </div>
+    <script src="addcomplaints.js"></script>
+    
+    <!-- /#page-content-wrapper -->
+  </div>
+</body>
+</html>

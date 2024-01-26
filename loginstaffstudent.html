@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GRsystem</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Add any additional stylesheets here -->
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        z-index: 1000;
+      }
+
+      .login-container {
+        text-align: center;
+        margin-top: 100px;
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      h2 {
+        color: #333;
+        margin-bottom: 40px;
+      }
+
+      .login-options {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .login-option {
+        margin: 0 50px;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+      .login-option:hover {
+        transform: scale(1.1);
+      }
+
+      footer {
+        text-align: center;
+        height: 50px;
+        background-color: #343a40; /* Use your desired background color */
+        color: white;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark shadow-lg">
+      <a class="navbar-brand" href="">GRsystem</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus/">About</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="Registration/Registration.html"
+                ><span class="fi-account-login"></span>Register</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout/">Login</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+
+    <div class="login-container">
+      <h2>Grievance Redressal System</h2>
+
+      <div class="login-options">
+        <div class="login-option">
+          <a href="/Student/StudentLogin/StudentLogin.html"
+            ><img src="/Student/student.png" alt="Student Icon"
+          /></a>
+          <p>Student Login</p>
+        </div>
+        <div class="login-option">
+          <a href="/Staff/StaffLogin/StaffLogin.html">
+            <img src="/Staff/staff.png" alt="Admin Icon" />
+          </a>
+          <p>Staff Login</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <center>Copyright &copy; GRsystem.com All rights Reserved.</center>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/simple-sidebar.css" />
+    <link rel="stylesheet" href="Registration.css" />
+
+    <title>Registration Page</title>
+
+    <script src="Registration.js"></script>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-xl navbar-dark bg-dark shadow-lg container-fluid"
+    >
+      <a class="navbar-brand" href="">GRsystem</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus/">About</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="Registration.html"
+                ><span class="fi-account-login"></span>Register</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../loginstaffstudent.html">Login</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form id="registrationForm" onsubmit="validateForm(event)">
+        <h2 align="center">Registration</h2>
+
+        <label for="registrationType">Select Registration Type:</label>
+        <select id="registrationType" name="selectedOption" required>
+          <option value="" disabled selected>Select Type</option>
+          <option value="Student Registration">Student Registration</option>
+          <option value="Staff Registration">Staff Registration</option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <label for="identification">Student ID/Staff ID:</label>
+        <input type="text" id="id" name="id" required />
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+        />
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <footer>
+      <center>Copyright &copy; GRsystem.com All rights Reserved.</center>
+    </footer>
+  </body>
+</html>
