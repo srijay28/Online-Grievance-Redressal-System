@@ -20,16 +20,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $stmt->execute();
     $user = $result->fetchArray(SQLITE3_ASSOC);
 
-
     if ($user && password_verify($password, $user['password'])) {
         // Login successful
         $_SESSION['username'] = $user['username'];
         $_SESSION['id'] = $user['id']; //so that id can be passed across session
-        header('Location: ../StaffProfile/StaffProfile.php');
-        exit();
+        // header('Location: ../Profile/Profile.php');
+        echo json_encode(["message" => "Succesfully logged in!"]);
+        // exit();
     } else {
         // Login failed
-        echo 'Invalid credentials. <a href="StaffLogin.html">Try again</a>.';
+         echo json_encode(["message" => "Invalid Credentials!"]);
+        // echo 'Invalid credentials. <a href="StudentLogin.html">Try again</a>.';
     }
 
     $db->close();
