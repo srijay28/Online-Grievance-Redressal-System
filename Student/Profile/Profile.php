@@ -51,6 +51,7 @@
         <a href="../AddComplaints/AddComplaints.html" class="list-group-item list-group-item-action bg-dark custom-text-white">Add Complaints</a>
         <a href="../ViewComplaints/ViewComplaints.html" class="list-group-item list-group-item-action bg-dark custom-text-white">View Complaints</a>
         <a href="../ResolvedGrievances/ResolvedGrievances.html" class="list-group-item list-group-item-action bg-dark custom-text-white">Resolved Greivances</a>
+        <a href="../UnresolvedGrievances/UnresolvedGrievances.html" class="list-group-item list-group-item-action bg-dark custom-text-white">Unresolved Greivances</a>
         <a href="../PasswordReset/PasswordReset.html" class="list-group-item list-group-item-action bg-dark custom-text-white">Password Reset</a>
       </div>
     </div>
