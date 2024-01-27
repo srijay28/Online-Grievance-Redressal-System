@@ -34,7 +34,7 @@ h2 {
 }
 
 .not-viewed {
-  background-color: #e73c3c; /* Red */
+  background-color: gray; /* Red */
   color: white;
 }
 
