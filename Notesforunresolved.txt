@@ -1,3 +1,4 @@
 Change the color of "Not Viewed".
 Look at where to begin to add "Unresolved":
-1) Add an Unresolved Grievances Page (Copy Resolved Greivances)
+1) Add an Unresolved Grievances Page in Student (Copy Resolved Greivances)
+2) Configure the php file for the Unresolved Page.

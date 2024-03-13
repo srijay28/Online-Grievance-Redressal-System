@@ -1,7 +1,7 @@
 let complaintsData = [];
 //After database connection formed
 function fetchComplaintsData() {
-  fetch("fetch_resolved_complaints.php")
+  fetch("fetch_unresolved_complaints.php")
     .then((response) => response.json())
     .then((data) => {
       // data recieved as response from fetch_complaints.php
@@ -68,7 +68,7 @@ function displayComplaints() {
     // Add class for color coding based on progress
     cell5.textContent = complaint.status;
     cell5.classList.add(
-      complaint.status === "Resolved" ? "resolved" : "in-progress"
+      complaint.status === "Unresolved" ? "unresolved" : "in-progress"
     );
     cell6.textContent = complaint.date_submitted;
   });

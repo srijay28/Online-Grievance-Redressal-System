@@ -46,6 +46,10 @@ h2 {
   background-color: greenyellow;
   color: black;
 }
+.unresolved {
+  background-color: red;
+  color: white;
+}
 
 .view-description-btn {
   background-color: #27ae60;
