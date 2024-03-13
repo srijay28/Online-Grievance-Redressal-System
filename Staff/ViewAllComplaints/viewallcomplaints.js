@@ -72,7 +72,7 @@ function displayComplaints() {
 
     // Add dropdown for status
     const statusDropdown = document.createElement("select");
-    const options = ["Not Viewed", "In Progress", "Resolved"];
+    const options = ["Not Viewed", "In Progress", "Resolved", "Unresolved"];
 
     options.forEach((option) => {
       const optionElement = document.createElement("option");
