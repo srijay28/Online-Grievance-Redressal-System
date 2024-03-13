@@ -6,7 +6,7 @@ $dbFile = '../../GRSystemDB';
 $conn = new SQLite3($dbFile);
 
 
-$sql = "SELECT complaint_id, student_id, category, title, description, status, date_submitted FROM complaints WHERE status <> 'Resolved'";
+$sql = "SELECT complaint_id, student_id, category, title, description, status, date_submitted FROM complaints WHERE status <> 'Resolved' and status <> 'Unresolved'";
 $stmt = $conn->prepare($sql);
 
 $result = $stmt->execute();
