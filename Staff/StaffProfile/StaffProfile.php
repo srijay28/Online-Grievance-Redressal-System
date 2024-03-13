@@ -49,6 +49,7 @@
         <a href="#" class="list-group-item list-group-item-action bg-dark active">Profile</a>
         <a href="../ViewAllComplaints/ViewAllComplaints.html" class="list-group-item list-group-item-action bg-dark custom-text-white">View All Complaints</a>
         <a href="../AllResolvedGrievances/AllResolvedGrievances.html" class="list-group-item list-group-item-action bg-dark custom-text-white">All Resolved Greivances</a>
+        <a href="../AllUnresolvedGrievances/AllUnresolvedGrievances.html" class="list-group-item list-group-item-action bg-dark custom-text-white">All Unresolved Greivances</a>
         <a href="../PasswordReset/PasswordReset.html" class="list-group-item list-group-item-action bg-dark custom-text-white">Password Reset</a>
       </div>
     </div>
